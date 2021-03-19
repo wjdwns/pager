@@ -22,7 +22,7 @@ class MainActivity : FragmentActivity() {
         pager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                
+
                 showToast("${position + 1} 페이지 선택됨")
             }
         })
@@ -60,3 +60,4 @@ class MainActivity : FragmentActivity() {
         Toast.makeText(this, Message,Toast.LENGTH_LONG).show()
     }
 }
+//오늘은 죄송함다...

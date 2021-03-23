@@ -19,13 +19,6 @@ class MainActivity : FragmentActivity() {
         pager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         pager.offscreenPageLimit = 3
 
-        pager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-
-                showToast("${position + 1} 페이지 선택됨")
-            }
-        })
         button1.setOnClickListener(){
             pager.currentItem =0
         }
